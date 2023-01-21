@@ -88,7 +88,7 @@ img {
 .main-display {
   padding: 200px 0;
   background: #2f303a;
-  background-image: url(/images/banner.jpg);
+  background-image: url(./images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -270,16 +270,63 @@ a:focus {
 .smcircle:hover,
 .smcircle:focus {
   background-color: #2196f3;
-  fill: #ffffff;
 }
 
-.icon-smcircle:hover,
-.icon-smcircle:focus {
+.smcircle:hover .icon-smcircle,
+.smcircle:focus .icon-smcircle {
   fill: #ffffff;
 }
 
 .icon-smcircle {
   fill: #afb1b8;
+}
+
+.clients {
+  padding-top: 59px;
+}
+
+.clients-tittle {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 44.02px;
+}
+
+.client-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 81px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-icon {
+  width: 106px;
+  height: 52.83px;
+  fill: #afb1b8;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin-bottom: 57px;
+}
+
+.client-box:hover,
+.client-box:focus {
+  border: 1px solid #2196f3;
+}
+
+.client-box:hover .client-icon,
+.client-box:focus .client-icon {
+  fill: #2196f3;
 }
 
 .member-description {
@@ -376,6 +423,49 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
   margin-top: 9px;
+}
+
+.sm-footer {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.smlist-footer {
+  width: 286px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sm-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.ellipse2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ellipse2:hover,
+.ellipse2:focus {
+  background-color: #2196f3;
+}
+
+.icon-ellipse2 {
+  fill: #ffffff;
 }
 
 .categories {
