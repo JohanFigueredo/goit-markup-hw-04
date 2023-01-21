@@ -59,17 +59,24 @@ img {
 }
 
 .contact-header {
-  margin-left: 356px;
-  padding: 32px 0px;
+  margin-left: 304px;
+  padding: 28px 0px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.header-mail {
-  color: #757575;
+.head-icon {
+  margin-right: 10px;
+  fill: #757575;
 }
 
+.head-icon:hover,
+.head-icon:focus {
+  fill: #2196f3;
+}
+
+.header-mail,
 .header-phone {
   color: #757575;
 }
@@ -81,6 +88,9 @@ img {
 .main-display {
   padding: 200px 0;
   background: #2f303a;
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-title {
@@ -139,6 +149,15 @@ button:focus {
 
 .features {
   padding: 0;
+}
+
+.ft-box {
+  width: 270px;
+  height: 120px;
+  padding: 25px 102.34px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .feature {
@@ -217,7 +236,7 @@ a:focus {
 
 .card {
   width: 270px;
-  height: 368px;
+  height: 428px;
   background: #ffffff;
 }
 
@@ -228,6 +247,39 @@ a:focus {
 .member {
   width: 270px;
   height: 260px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.smcircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+}
+
+.smcircle:hover,
+.smcircle:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+.icon-smcircle:hover,
+.icon-smcircle:focus {
+  fill: #ffffff;
+}
+
+.icon-smcircle {
+  fill: #afb1b8;
 }
 
 .member-description {
@@ -338,6 +390,8 @@ address {
 .categories:hover {
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .categories:focus {
