@@ -88,7 +88,7 @@ img {
 .main-display {
   padding: 200px 0;
   background: #2f303a;
-  background-image: url(./images/banner.jpg);
+  background-image: url(/images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -449,7 +449,7 @@ address {
   margin-bottom: 20px;
 }
 
-.ellipse2 {
+.fsm-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -459,12 +459,14 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.ellipse2:hover,
-.ellipse2:focus {
+.fsm-circle:hover,
+.fsm-circle:focus {
   background-color: #2196f3;
 }
 
-.icon-ellipse2 {
+.icon-fsm-circle {
+  width: 20px;
+  height: 20px;
   fill: #ffffff;
 }
 
