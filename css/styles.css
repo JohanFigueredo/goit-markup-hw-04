@@ -88,7 +88,7 @@ img {
 .main-display {
   padding: 200px 0;
   background: #2f303a;
-  background: url(/images/banner.jpg);
+  background: url(../images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -211,15 +211,15 @@ a:focus {
 }
 
 .keyboard {
-  background: url(/images/keyboard.jpg);
+  background-image: url(../images/keyboard.jpg);
 }
 
 .laptop {
-  background: url(/images/laptop.jpg);
+  background-image: url(../images/laptop.jpg);
 }
 
 .tablet {
-  background: url(/images/tablet.jpg);
+  background-image: url(../images/tablet.jpg);
 }
 
 .inv-box {
