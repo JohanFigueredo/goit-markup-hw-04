@@ -88,7 +88,7 @@ img {
 .main-display {
   padding: 200px 0;
   background: #2f303a;
-  background-image: url('./images/banner.jpg');
+  background: url(/images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -202,6 +202,36 @@ a:focus {
 .operations {
   padding: 0;
   gap: 30.26px;
+}
+
+.operation {
+  display: flex;
+  width: 370px;
+  height: 294px;
+}
+
+.keyboard {
+  background: url(/images/keyboard.jpg);
+}
+
+.laptop {
+  background: url(/images/laptop.jpg);
+}
+
+.tablet {
+  background: url(/images/tablet.jpg);
+}
+
+.inv-box {
+  margin-top: 224px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.operation-caption {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 27px 79px;
+  letter-spacing: 0.03em;
 }
 
 .operation-title {
