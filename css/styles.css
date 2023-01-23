@@ -75,14 +75,17 @@ img {
   line-height: 1.14;
 }
 
+.header-mail:hover .head-icon,
+.header-mail:focus .head-icon,
+.header-phone:hover .head-icon,
+.header-phone:focus .head-icon {
+  fill: var(--link-hf-color);
+  color: var(--link-hf-color);
+}
+
 .head-icon {
   margin-right: 10px;
   fill: var(--grey-color);
-}
-
-.head-icon:hover,
-.head-icon:focus {
-  fill: var(--link-hf-color);
 }
 
 .header-mail,
@@ -146,6 +149,11 @@ button:focus {
   border-radius: 4px;
   margin: 0 auto;
   border: none;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #1784dd;
 }
 
 .button-title {
