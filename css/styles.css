@@ -232,15 +232,19 @@ a:focus {
 }
 
 .inv-box {
+  width: 370px;
+  display: flex;
   margin-top: 224px;
   background: rgba(47, 48, 58, 0.8);
 }
 
 .operation-caption {
+  display: flex;
   font-size: 14px;
-  color: var(--pure-white-color);
-  padding: 27px 79px;
+  flex-wrap: wrap;
+  align-content: center;
   letter-spacing: 0.03em;
+  color: var(--pure-white-color);
 }
 
 .operation-title {
