@@ -18,6 +18,15 @@ p {
   margin: 0 auto;
 }
 
+:root {
+  --logo-color: #2196f3;
+  --link-hf-color: #2196f3;
+  --pure-white-color: #fff;
+  --white-color-one: #f5f4fa;
+  --light-grey-color: #afb1b8;
+  --grey-color: #757575;
+}
+
 body {
   font-family: roboto, sans-serif;
   font-style: normal;
@@ -39,7 +48,7 @@ body {
 }
 
 header {
-  background: #ffffff;
+  background: var(--pure-white-color);
   border: 1px solid #ececec;
 }
 
@@ -68,17 +77,19 @@ img {
 
 .head-icon {
   margin-right: 10px;
-  fill: #757575;
+  fill: var(--grey-color);
 }
 
 .head-icon:hover,
 .head-icon:focus {
-  fill: #2196f3;
+  fill: var(--link-hf-color);
 }
 
 .header-mail,
 .header-phone {
-  color: #757575;
+  display: flex;
+  color: var(--grey-color);
+  align-items: center;
 }
 
 .contact-division {
@@ -101,7 +112,7 @@ img {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--pure-white-color);
 }
 
 .logo {
@@ -110,7 +121,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--logo-color);
 }
 
 .header-logo {
@@ -126,21 +137,22 @@ button {
 }
 
 button:focus {
-  color: #2196f3;
+  color: var(--link-hf-color);
 }
 
 .main-button {
+  background: var(--link-hf-color);
   padding: 10px 32px;
-  background: #2196f3;
   border-radius: 4px;
   margin: 0 auto;
+  border: none;
 }
 
 .button-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  color: #ffffff;
+  color: var(--pure-white-color);
 }
 
 .flex {
@@ -155,7 +167,7 @@ button:focus {
   width: 270px;
   height: 120px;
   padding: 25px 102.34px;
-  background: #f5f4fa;
+  background: var(--white-color-one);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -177,7 +189,7 @@ button:focus {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-color);
 }
 
 ul {
@@ -191,12 +203,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #2196f3;
-}
-
+a:hover,
 a:focus {
-  color: #2196f3;
+  color: var(--link-hf-color);
 }
 
 .operations {
@@ -229,7 +238,7 @@ a:focus {
 
 .operation-caption {
   font-size: 14px;
-  color: #ffffff;
+  color: var(--pure-white-color);
   padding: 27px 79px;
   letter-spacing: 0.03em;
 }
@@ -248,7 +257,7 @@ a:focus {
 }
 
 .team {
-  background: #f5f4fa;
+  background: var(--white-color-one);
 }
 
 .team-cards {
@@ -267,7 +276,7 @@ a:focus {
 .card {
   width: 270px;
   height: 428px;
-  background: #ffffff;
+  background: var(--pure-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -297,21 +306,21 @@ a:focus {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: var(--pure-white-color);
 }
 
 .smcircle:hover,
 .smcircle:focus {
-  background-color: #2196f3;
+  background-color: var(--link-hf-color);
 }
 
 .smcircle:hover .icon-smcircle,
 .smcircle:focus .icon-smcircle {
-  fill: #ffffff;
+  fill: var(--pure-white-color);
 }
 
 .icon-smcircle {
-  fill: #afb1b8;
+  fill: var(--light-grey-color);
 }
 
 .clients {
@@ -332,7 +341,7 @@ a:focus {
   justify-content: center;
   width: 170px;
   height: 81px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--light-grey-color);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -340,7 +349,7 @@ a:focus {
 .client-icon {
   width: 106px;
   height: 52.83px;
-  fill: #afb1b8;
+  fill: var(--light-grey-color);
 }
 
 .clients-list {
@@ -354,12 +363,12 @@ a:focus {
 
 .client-box:hover,
 .client-box:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--link-hf-color);
 }
 
 .client-box:hover .client-icon,
 .client-box:focus .client-icon {
-  fill: #2196f3;
+  fill: var(--link-hf-color);
 }
 
 .member-description {
@@ -400,7 +409,7 @@ a:focus {
 
 .member-text {
   text-align: center;
-  color: #757575;
+  color: var(--grey-color);
 }
 
 .filter {
@@ -414,6 +423,12 @@ a:focus {
   flex-wrap: wrap;
   padding: 0;
   gap: 30px;
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
@@ -454,7 +469,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--pure-white-color);
   margin-top: 9px;
 }
 
@@ -471,14 +486,9 @@ address {
 }
 
 .sm-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
+  color: var(--pure-white-color);
   margin-bottom: 20px;
 }
 
@@ -494,38 +504,39 @@ address {
 
 .fsm-circle:hover,
 .fsm-circle:focus {
-  background-color: #2196f3;
+  background-color: var(--link-hf-color);
 }
 
 .icon-fsm-circle {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: var(--pure-white-color);
 }
 
 .categories {
-  border-color: #f5f4fa;
+  border-color: var(--white-color-one);
   border-radius: 4px;
   padding: 6px 24px;
   line-height: 26px;
   font-weight: 500;
   font-size: 16px;
+  border: none;
 }
 
 .categories:hover {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--pure-white-color);
+  background-color: var(--link-hf-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .categories:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--pure-white-color);
+  background-color: var(--link-hf-color);
 }
 
 .link-page.current {
-  color: #2196f3;
+  color: var(--link-hf-color);
 }
 
 .foot-info {
